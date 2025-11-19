@@ -1,5 +1,6 @@
 import React from "react";
-import Galaxy from "./Galaxy.jsx";
+import Galaxy from "./ui/Galaxy.jsx";
+// import InputField from "../components/InputField";
 
 const Background = () => {
   return (
@@ -12,6 +13,7 @@ const Background = () => {
         saturation={0}
         hueShift={0}
       />
+      {/* <InputField /> */}
     </div>
   );
 };

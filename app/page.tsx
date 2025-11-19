@@ -1,9 +1,9 @@
 import React from "react";
-import Background from "../components/ui/Background";
+import Home from "../components/Home";
 const page = () => {
   return (
-    <div className="text-red-500">
-      <Background />
+    <div className="relative top-0 ">
+      <Home />
     </div>
   );
 };
