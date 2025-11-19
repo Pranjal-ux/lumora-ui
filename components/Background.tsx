@@ -1,10 +1,12 @@
 import React from "react";
 import Galaxy from "./ui/Galaxy.jsx";
-// import InputField from "../components/InputField";
+//import InputField from "../components/InputField";
+
 
 const Background = () => {
   return (
     <div className="h-screen bg-black relative flex justify-center items-center ">
+   
       <Galaxy
         mouseRepulsion={true}
         mouseInteraction={true}
