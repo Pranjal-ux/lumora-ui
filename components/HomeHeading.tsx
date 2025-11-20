@@ -1,6 +1,6 @@
 import React from "react";
 // import TextType from "./TextType";
-import TextPressure from "./TextPressure";
+import TextPressure from "./ui/TextPressure";
 const HomeHeading = () => {
   return (
     <div
@@ -16,15 +16,15 @@ max-w-[50vw]
   tracking-tight"
     >
       <TextPressure
-        text="Klarden-Ai"
+        text="Klarden"
         flex={true}
         alpha={false}
         stroke={false}
         width={true}
         weight={true}
         italic={true}
-        textColor="#A3FFE3"
-        strokeColor="#ff0000"
+        textColor="#E5E4E2"
+        strokeColor="#E5E4E2"
         minFontSize={170}
       />
       {/* #E5E4E2 */}
