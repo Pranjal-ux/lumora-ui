@@ -1,11 +1,10 @@
-"use client";
 import React from "react";
-import Home from "../components/Home";
+import Page2Background from "./components/Page2Background";
 
 const page = () => {
   return (
     <div className="">
-      <Home />
+      <Page2Background />
     </div>
   );
 };

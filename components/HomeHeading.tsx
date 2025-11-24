@@ -5,8 +5,8 @@ const HomeHeading = () => {
   return (
     <div
       className=" absolute
-  inset-x-0
- lg: -top-60
+  inset-x-1
+ lg: -top-50
   mx-auto
   w-[45%]
 max-w-[50vw]
@@ -16,7 +16,7 @@ max-w-[50vw]
   tracking-tight"
     >
       <TextPressure
-        text="Klarden"
+        text="Klarden Ai"
         flex={true}
         alpha={false}
         stroke={false}
