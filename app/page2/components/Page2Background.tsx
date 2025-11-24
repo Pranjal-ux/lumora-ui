@@ -1,17 +1,20 @@
 "use client";
 import React from "react";
-import FloatingLines from "../../../components/FloatingLines";
+import Plasma from "../../../components/Plasma";
+import Nav from "./Nav";
 const Page2Background = () => {
   return (
-    <div className="h-screen w-full relative">
-      <FloatingLines
-        enabledWaves={["top", "middle", "bottom"]}
-        lineCount={[10, 15, 20]}
-        lineDistance={[8, 6, 4]}
-        bendRadius={5.0}
-        bendStrength={-0.5}
-        interactive={true}
-        parallax={true}
+    <div className="min-h-screen bg-black w-full relative">
+      <div>
+        <Nav />
+      </div>
+      <Plasma
+        color="#9b30ff"
+        speed={0.6}
+        direction="forward"
+        scale={1.1}
+        opacity={0.8}
+        mouseInteractive={true}
       />
     </div>
   );
