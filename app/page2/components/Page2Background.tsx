@@ -1,27 +1,28 @@
 "use client";
 import React from "react";
-import Plasma from "../../../components/Plasma";
-import Nav from "./Nav";
-import Page2Heading from "./Page2Heading";
+import FloatingLines from "../../../components/FloatingLines";
+import Hero from "../../../components/hero";
+
 const Page2Background = () => {
   return (
-    <div className="min-h-[100dvh] bg-black w-full relative overflow-hidden">
-      {/* Plasma background */}
-      <div className="absolute inset-0 sm:mx-10">
-        <Plasma
-          color="#9b30ff"
-          speed={0.6}
-          direction="forward"
-          scale={1.1}
-          opacity={0.8}
-          mouseInteractive={true}
+    <div className="relative  min-h-screen w-full">
+      {/* Background fixed to viewport (doesn't vanish, doesn't depend on content height) */}
+      <div className="pointer-events-none fixed inset-0 -z-10">
+        <FloatingLines
+          enabledWaves={["top", "middle", "bottom"]}
+          lineCount={[10, 15, 20]}
+          lineDistance={[8, 8, 4]}
+          bendRadius={5.0}
+          bendStrength={-0.5}
+          interactive={true}
+          parallax={true}
         />
       </div>
 
-      {/* Content on top */}
-      <div className="relative z-10 px-4 sm:px-10 py-10">
-        <Page2Heading />
-      </div>
+      {/* Content */}
+      <main className="relative z-10 px-4 sm:px-10 py-16">
+        <Hero />
+      </main>
     </div>
   );
 };
