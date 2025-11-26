@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="w-full flex flex-col gap-16 items-center justify-center px-6 py-14">
+    <div className="w-full flex flex-col gap-16 items-center justify-center px-6 py-14 lg:mt-10">
       <div className="text-center leading-relaxed max-w-3xl">
         <Badge
           variant="secondary"
@@ -43,8 +43,15 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="relative w-full max-w-5xl mx-auto aspect-video">
-        <div className="relative w-full h-full rounded-2xl border border-black bg-transparent backdrop-blur-lg shadow-2xl" />
+      <div className="relative w-full max-w-5xl mx-auto aspect-video lg:mt-11  ">
+        <video
+          src="/video.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="relative w-full h-full rounded-2xl object-cover border border-gray-600 bg-transparent backdrop-blur-lg shadow-4xl"
+        />
       </div>
     </div>
   );
