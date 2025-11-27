@@ -20,11 +20,11 @@ export default function Hero() {
           </Link>
         </Badge>
 
-        <h1 className="my-3 py-2 text-slate-400 text-4xl sm:text-5xl md:text-6xl lg:text-7xl md:leading-[1.2] font-semibold tracking-tighter">
+        <h1 className="my-3 py-2 text-slate-400  sm:text-5xl md:text-6xl lg:text-6xl md:leading-[1.2] font-semibold tracking-tighter">
           Customized Shadcn UI Blocks & Components
         </h1>
 
-        <p className=" leading-snug md:text-lg ... text-balance line-clamp-2">
+        <p className=" leading-tight md:text-lg ... text-balance line-clamp-3">
           <ScrambledText className="mt-10">
             Explore a collection of Shadcn UI blocks and components, ready to
             preview and copy. Streamline your development workflow with
