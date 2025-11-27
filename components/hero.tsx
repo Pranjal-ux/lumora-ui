@@ -1,7 +1,8 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight, CirclePlay } from "lucide-react";
-import ShimmerButton from "./ui/shimmer-button";
+// import ShimmerButton from "./ui/shimmer-button";
+import RainbowButton from "./ui/rainbow-button";
 import ScrambledText from "./ScrambledText";
 import Link from "next/link";
 
@@ -31,15 +32,13 @@ export default function Hero() {
           </ScrambledText>
         </p>
 
-        <div className="mt-12 flex items-center justify-center gap-2">
-          <ShimmerButton className="">Get started</ShimmerButton>
-          <Button
-            variant="outline"
-            size="lg"
-            className="rounded-full text-base shadow-none cursor-pointer"
-          >
-            <CirclePlay className="h-5 w-5" /> Watch Demo
-          </Button>
+        <div className="mt-12 flex items-center justify-center gap-5">
+          <RainbowButton className="w-32 font-bold text-[#B300FF]">
+            Get started
+          </RainbowButton>
+          <RainbowButton className="w-32 font-bold text-[#B3E5FC]">
+            Watch demo
+          </RainbowButton>
         </div>
       </div>
 

@@ -3,7 +3,7 @@ import React from "react";
 // import FloatingLines from "../../../components/FloatingLines";
 import Aurora from "../../../components/Aurora";
 import Hero from "../../../components/hero";
-
+import Loop from '../components/Loop'
 const Page2Background = () => {
   return (
     <div className="relative  min-h-screen w-full">
@@ -21,6 +21,7 @@ const Page2Background = () => {
       <main className="relative z-10 px-4 sm:px-10 py-16">
         <Hero />
       </main>
+      <Loop/>
     </div>
   );
 };
