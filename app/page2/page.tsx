@@ -1,11 +1,14 @@
 import React from "react";
-import Page2Home from "./components/Page2Home";
-
+import Home from "./components/Home";
+// import Feature from "./components/Feature"
 const page = () => {
   return (
-    <div className="">
-      <Page2Home />
-    </div>
+    <>
+      <div className="h-screen w-full   ">
+        <Home />
+      </div>
+      {/* <Feature/> */}
+    </>
   );
 };
 

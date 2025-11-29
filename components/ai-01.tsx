@@ -117,7 +117,7 @@ export default function Ai01() {
                   p-3
                   text-base
                   text-white
-                  placeholder:text-white/50
+                  placeholder:text-white
                   focus-visible:ring-0
                   focus-visible:ring-offset-0
                   scrollbar-thin
