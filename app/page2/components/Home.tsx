@@ -1,23 +1,21 @@
 "use client";
 import React from "react";
-import FloatingLine from "../../../components/FloatingLines";
+import Aurora from "../../../components/Aurora";
+
 import Hero from "../../../components/hero";
 
 const Home = () => {
   return (
-    <div>
-      <div className="h-full relative  ">
-        <FloatingLine
-          enabledWaves={["top", "middle", "bottom"]}
-          lineCount={[10, 15, 20]}
-          lineDistance={[8, 6, 4]}
-          bendRadius={5.0}
-          bendStrength={-0.5}
-          interactive={true}
-          parallax={true}
+    <div className="h-screen">
+      <div className=" h-full relative bg-black ">
+        <Aurora
+          colorStops={["#001F7A", "#005EFF", "#00A8FF"]}
+          blend={0.5}
+          amplitude={1.4}
+          speed={0.5}
         />
       </div>
-      <div className="absolute z-30 top-1 right-1 left-1 mb-2  ">
+      <div className="absolute   top-1 right-1 left-1 mb-2  ">
         <Hero />
       </div>
     </div>

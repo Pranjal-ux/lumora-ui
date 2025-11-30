@@ -1,13 +1,20 @@
 import React from "react";
 import Home from "./components/Home";
-// import Feature from "./components/Feature"
+import Feature from "./components/Feature";
+import Footer from "./components/Footer";
+
 const page = () => {
   return (
     <>
-      <div className="h-screen w-full   ">
+      <div className=" h-screen w-full relative ">
         <Home />
       </div>
-      {/* <Feature/> */}
+      <div className="h-screen bg-red-300">
+        <Feature />
+      </div>
+      <div className="bg-blue-800 h-screen">
+        <Footer />
+      </div>
     </>
   );
 };

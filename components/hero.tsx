@@ -16,10 +16,10 @@ export default function Hero() {
             Just released v1.0.0 <ArrowUpRight className="ml-1 size-4" />
           </Link>
         </Badge>
-        <h1 className="mt-6 text-4xl sm:text-5xl md:text-6xl lg:text-7xl md:leading-[1.2] font-semibold tracking-tighter">
+        <h1 className="mt-6 text-[#d4d4d4] text-4xl sm:text-5xl md:text-6xl lg:text-7xl md:leading-[1.2] font-semibold tracking-tighter">
           Customized Shadcn UI Blocks & Components
         </h1>
-        <p className="mt-6 md:text-lg text-foreground/80">
+        <p className="mt-6 md:text-lg text-white ">
           Explore a collection of Shadcn UI blocks and components, ready to
           preview and copy. Streamline your development workflow with
           easy-to-implement examples.
@@ -37,7 +37,7 @@ export default function Hero() {
           </Button>
         </div>
       </div>
-      <div className="w-[50vw] max-w-(--breakpoint-xl) mx-auto aspect-video bg-accent rounded-xl backdrop-blur-2xl shadow-xl" />
+      {/* <div className="w-[50vw]  mx-auto aspect-video  rounded-xl bg-[#1A1A1A] opacity-70 backdrop-blur-6xl shadow-3xl" /> */}
     </div>
   );
 }
