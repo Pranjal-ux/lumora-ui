@@ -2,7 +2,9 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight, CirclePlay } from "lucide-react";
 import Link from "next/link";
-
+// import SparkelsText from "../components/ui/sparkles-text";
+import { AnimatedShinyText } from "@/components/ui/animated-shiny-text";
+import WrapButton from "./ui/wrap-button";
 export default function Hero() {
   return (
     <div className="min-h-screen w-full flex flex-col gap-16 items-center justify-center px-6 py-16">
@@ -16,22 +18,24 @@ export default function Hero() {
             Just released v1.0.0 <ArrowUpRight className="ml-1 size-4" />
           </Link>
         </Badge>
-        <h1 className="mt-6 text-[#d4d4d4] text-4xl sm:text-5xl md:text-6xl lg:text-7xl md:leading-[1.2] font-semibold tracking-tighter">
-          Customized Shadcn UI Blocks & Components
+        <h1 className="mt-6  font-[font1]  text-4xl sm:text-5xl md:text-6xl lg:text-7xl md:leading-[1.2]  tracking-tighter">
+          <AnimatedShinyText>
+            Customized Shadcn UI Blocks & Components
+          </AnimatedShinyText>
         </h1>
-        <p className="mt-6 md:text-lg text-white ">
-          Explore a collection of Shadcn UI blocks and components, ready to
-          preview and copy. Streamline your development workflow with
-          easy-to-implement examples.
+        <p className="mt-6 md:text-lg font-[font2]">
+          <AnimatedShinyText>
+            Explore a collection of Shadcn UI blocks and components, ready to
+            preview and copy. Streamline your development workflow with
+            easy-to-implement examples.
+          </AnimatedShinyText>
         </p>
         <div className="mt-10 flex items-center justify-center gap-4">
-          <Button size="lg" className="rounded-full text-base">
-            Get Started <ArrowUpRight className="h-5! w-5!" />
-          </Button>
+          <WrapButton className="">Get started</WrapButton>
           <Button
             variant="outline"
             size="lg"
-            className="rounded-full text-base shadow-none"
+            className="rounded-full bg-white text-black backdrop-blur-xl shadow-2xl"
           >
             <CirclePlay className="h-5! w-5!" /> Watch Demo
           </Button>
