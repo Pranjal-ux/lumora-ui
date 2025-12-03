@@ -6,14 +6,16 @@ import Footer from "./components/Footer";
 const page = () => {
   return (
     <>
-      <div className=" h-screen w-full relative  ">
-        <Home />
-      </div>
-      <div className="h-screen  bg-black">
-        <Feature />
-      </div>
-      <div className="bg-blue-800 min-h-screen relative">
-        <Footer />
+      <div className="h-screen relative">
+        <div className=" h-full w-full relative  ">
+          <Home />
+        </div>
+        <div className="h-full     bg-black">
+          <Feature />
+        </div>
+        <div className="bg-blue-800  h-full ">
+          <Footer />
+        </div>
       </div>
     </>
   );

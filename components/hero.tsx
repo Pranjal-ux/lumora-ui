@@ -41,9 +41,9 @@ export default function Hero() {
           </Button>
         </div>
       </div>
-      <div className="">
+      <div className=" ">
         <HeroVideoDialog
-          className="block mt-3 "
+          className="block "
           animationStyle="from-center"
           videoSrc="https://www.example.com/dummy-video"
           thumbnailSrc="https://www.example.com/dummy-thumbnail.png"

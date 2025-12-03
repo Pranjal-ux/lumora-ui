@@ -2,7 +2,7 @@ import React from "react";
 import Features from "../../../components/features";
 const Feature = () => {
   return (
-    <div className="flex flex-wrap justify-center">
+    <div className=" min-h-screen  text-white font-[font1] flex flex-col overflow-auto  ">
       <Features />
     </div>
   );
